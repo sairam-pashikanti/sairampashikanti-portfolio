@@ -1,5 +1,3 @@
-## Hi there 👋
-
 # 👋 Hi there, I'm Sairam Pashikanti
 
 🎯 **Software Engineer** | 🧠 Java Developer | 📂 ECM Specialist | 🤖 Automation Enthusiast  
