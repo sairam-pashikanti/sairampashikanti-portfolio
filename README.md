@@ -1,59 +1,85 @@
 # 👋 Hi there, I'm Sairam Pashikanti
 
-🎯 **Software Engineer** | 🧠 Java Developer | 📂 ECM Specialist | 🤖 Automation Enthusiast  
-📍 Based in India | 📧 pashikantisairam@gmail.com | 📱 9676779191  
+💻 Software Engineer | 🤖 Applied AI Learner | 🧠 Automation & Systems Builder  
+📍 India | 📧 pashikantisairam@gmail.com
 
 ---
 
-## 🧩 About Me
-I’m a Java developer with **3 years of experience** working on enterprise content management systems (ECM) such as **Documentum, Alfresco, FileNet, and XECM**.  
-I specialize in building migration tools, desktop clients using **JavaFX + Spring Boot**, and automation solutions using **Selenium & Playwright**.
+## 🚀 About Me
+
+I am a **Software Engineer with 4 years of experience** building enterprise automation tools and migration systems for ECM platforms such as **Documentum, Alfresco, FileNet, and XECM**.
+
+My background includes developing **Java-based desktop tools, automation frameworks, and enterprise migration utilities** using technologies like **Java, Spring Boot, JavaFX, Selenium, and Playwright**.
+
+Currently, I am **transitioning into Applied AI and Data Science**, focusing on:
+
+- Python programming
+- Data analysis
+- Machine learning
+- AI-powered software systems
+
+My goal is to combine **software engineering with artificial intelligence** to build intelligent and scalable systems.
 
 ---
 
-## 💻 Tech Stack
-- **Languages**: Java, J2EE, XML  
-- **Frameworks**: Spring Boot, JavaFX  
-- **Automation**: Selenium, Playwright  
-- **Databases**: Oracle, SQL Server  
-- **Servers**: Apache Tomcat, JBoss  
-- **Tools**: Git, Postman, Eclipse  
-- **ECM Tools**: Documentum, Alfresco, FileNet, XECM  
+## 🛠 Tech Stack
+
+### Software Engineering
+- **Languages**: Java, Python, XML
+- **Frameworks**: Spring Boot, JavaFX
+- **Automation**: Selenium, Playwright
+- **Databases**: Oracle, SQL Server
+- **Tools**: Git, Postman, Eclipse
+
+### AI & Data (Learning)
+- Python
+- NumPy
+- Pandas
+- Machine Learning
+- Data Analysis
 
 ---
 
-## 🚀 Key Projects
+## 📂 Key Projects
 
-### 1. ECM Migration Tools (Importers & Exporters)
-Developed standalone tools to migrate documents and metadata between platforms like XECM, Alfresco, Documentum, and FileNet using **JavaFX and Spring Boot**.
+### ECM Migration Tools
+Developed standalone migration utilities for transferring documents and metadata across ECM platforms such as **Documentum, Alfresco, FileNet, and XECM**.
 
-### 2. Test Suite Execution Client
-JavaFX-based desktop tool to execute web test suites created in a centralized Angular system. Integrated with **Selenium and Playwright** for modular execution, reporting, and backend sync.
+Features:
+- Importers and exporters for repository migration
+- Metadata mapping and transformation
+- Desktop UI using **JavaFX**
 
 ---
 
-## 🏢 Work Experience
+### Automation Test Execution Client
+Built a **JavaFX-based desktop client** for executing automated test suites.
 
-**🔸 Tiera Technologies Pvt Ltd**  
-*Software Engineer (Oct 2024 – Present)*  
-- Built ECM import/export tools  
-- Developed test execution client integrating Selenium & Playwright
+Features:
+- Integration with **Selenium & Playwright**
+- Test execution and reporting
+- Backend synchronization with centralized test management system
 
-**🔸 Verinon Technology Solutions Pvt Ltd**  
-*Software Engineer (Mar 2022 – Sep 2024)*  
-- Documentum Upgrade for APAC Oil & Gas client  
-- Support & Maintenance for Indian Life Insurance client  
+---
+
+## 📈 Current Learning Journey
+
+I am actively developing skills in:
+
+- Python programming
+- Statistics & data analysis
+- Machine learning
+- AI-driven applications
+
+Projects and experiments related to **AI and data science** will be published in this repository.
 
 ---
 
 ## 🎓 Education
-- **B.Tech**, Electrical & Electronics, Balaji Institute of Technology and Science – 6.56 CGPA  
-- **Diploma**, SVS Group of Institutions – 76%  
-- **S.S.C**, Ekashila High School – 9.0 CGPA  
+
+**B.Tech — Electrical & Electronics Engineering**  
+Balaji Institute of Technology and Science
 
 ---
 
-> “I don’t just build software—I solve problems with precision, persistence, and purpose.”
-
----
-
+⭐ *Building the bridge between Software Engineering and Artificial Intelligence.*
