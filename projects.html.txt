@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects | Sairam Pashikanti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Projects</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+</nav>
+
+</header>
+
+<section class="projects">
+
+<h2>My Learning Projects</h2>
+
+<p>
+Projects will be added here as I continue my Applied AI learning journey.
+</p>
+
+<div class="project-card">
+
+<h3>Project Name</h3>
+
+<p>
+Short description of the project will go here.
+</p>
+
+<a href="#">GitHub Link</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Sairam Pashikanti</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sairam Pashikanti | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sairam Pashikanti</h1>
+    <p>Software Engineer → Applied AI Learner</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+
+    <p>
+    Software Engineer with 4 years of experience building enterprise automation
+    tools and ECM migration systems.
+    </p>
+
+    <p>
+    Currently transitioning into <strong>Applied AI and Data Science</strong>,
+    learning Python, Machine Learning, and building practical projects weekly.
+    </p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Machine Learning</li>
+        <li>Data Analysis</li>
+        <li>Automation (Selenium / Playwright)</li>
+        <li>Git</li>
+    </ul>
+</section>
+
+<section class="links">
+
+<h2>Profiles</h2>
+
+<p>
+GitHub: <a href="#">Add Later</a>
+</p>
+
+<p>
+Kaggle: <a href="#">Add Later</a>
+</p>
+
+<p>
+Email: pashikantisairam@gmail.com
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 Sairam Pashikanti</p>
+</footer>
+
+</body>
+</html>
