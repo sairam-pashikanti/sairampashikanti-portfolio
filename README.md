@@ -1,85 +1,37 @@
-# 👋 Hi there, I'm Sairam Pashikanti
+# Sairam Pashikanti
 
-💻 Software Engineer | 🤖 Applied AI Learner | 🧠 Automation & Systems Builder  
-📍 India | 📧 pashikantisairam@gmail.com
+**Software Engineer (4 YoE) → Gen AI Application Developer**
 
----
+I build AI-powered applications. My background is in enterprise software — migration tools, automation frameworks, and desktop applications using Java and Spring Boot. Now I'm applying that engineering discipline to Gen AI: building chatbots, RAG pipelines, AI agents, and LLM-powered APIs.
 
-## 🚀 About Me
+## What I'm building
 
-I am a **Software Engineer with 4 years of experience** building enterprise automation tools and migration systems for ECM platforms such as **Documentum, Alfresco, FileNet, and XECM**.
+| Project | Stack | Status |
+|---------|-------|--------|
+| **PDF Q&A Chatbot** — Upload documents, ask questions, get cited answers | Python, LangChain, ChromaDB, Streamlit | 🔨 In Progress |
+| **AI Automation Agent** — Natural language → multi-step task execution | Python, CrewAI/LangGraph, FastAPI | ⏳ Upcoming |
+| **AI-Powered API Service** — Production-grade LLM backend with docs | Python, FastAPI, OpenAI/Claude API, Docker | ⏳ Upcoming |
 
-My background includes developing **Java-based desktop tools, automation frameworks, and enterprise migration utilities** using technologies like **Java, Spring Boot, JavaFX, Selenium, and Playwright**.
+## Tech I work with
 
-Currently, I am **transitioning into Applied AI and Data Science**, focusing on:
+**Building now:** Python · FastAPI · LangChain · ChromaDB · OpenAI & Claude APIs · Streamlit · SQL · Git
 
-- Python programming
-- Data analysis
-- Machine learning
-- AI-powered software systems
+**Previous life:** Java · Spring Boot · JavaFX · Selenium · Playwright · REST APIs · Oracle · SQL Server
 
-My goal is to combine **software engineering with artificial intelligence** to build intelligent and scalable systems.
+## Previous engineering work
 
----
+**ECM Migration Platform** — Built Java/Spring Boot tools that export and import documents + metadata across enterprise platforms (Documentum, Alfresco, FileNet, XECM). Desktop UI in JavaFX, API-driven backend architecture.
 
-## 🛠 Tech Stack
+**Test Automation Executor** — Built a desktop client that receives test suites from a central server, executes browser automation via Playwright, and reports results back. JavaFX frontend, Spring Boot backend.
 
-### Software Engineering
-- **Languages**: Java, Python, XML
-- **Frameworks**: Spring Boot, JavaFX
-- **Automation**: Selenium, Playwright
-- **Databases**: Oracle, SQL Server
-- **Tools**: Git, Postman, Eclipse
+**XML-Driven RPA Accelerator** — Built an RPA tool with a JavaFX interface and Java execution engine that reads XML-defined workflows and automates desktop/web processes.
 
-### AI & Data (Learning)
-- Python
-- NumPy
-- Pandas
-- Machine Learning
-- Data Analysis
+## Education
 
----
+B.Tech — Electrical & Electronics Engineering, Balaji Institute of Technology and Science
 
-## 📂 Key Projects
+## Contact
 
-### ECM Migration Tools
-Developed standalone migration utilities for transferring documents and metadata across ECM platforms such as **Documentum, Alfresco, FileNet, and XECM**.
-
-Features:
-- Importers and exporters for repository migration
-- Metadata mapping and transformation
-- Desktop UI using **JavaFX**
-
----
-
-### Automation Test Execution Client
-Built a **JavaFX-based desktop client** for executing automated test suites.
-
-Features:
-- Integration with **Selenium & Playwright**
-- Test execution and reporting
-- Backend synchronization with centralized test management system
-
----
-
-## 📈 Current Learning Journey
-
-I am actively developing skills in:
-
-- Python programming
-- Statistics & data analysis
-- Machine learning
-- AI-driven applications
-
-Projects and experiments related to **AI and data science** will be published in this repository.
-
----
-
-## 🎓 Education
-
-**B.Tech — Electrical & Electronics Engineering**  
-Balaji Institute of Technology and Science
-
----
-
-⭐ *Building the bridge between Software Engineering and Artificial Intelligence.*
+**Email:** pashikantisairam@gmail.com
+**GitHub:** [github.com/sairam-pashikanti](https://github.com/sairam-pashikanti)
+**LinkedIn:** [Add your LinkedIn URL here]
