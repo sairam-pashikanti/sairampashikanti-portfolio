@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sairam Pashikanti — Software Engineer → Gen AI Developer</title>
+<title>Sairam Pashikanti — Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -20,7 +20,8 @@
   --accent-dim: rgba(249, 115, 22, 0.12);
   --accent-glow: rgba(249, 115, 22, 0.3);
   --green: #22c55e;
-  --yellow: #eab308;
+  --blue: #3b82f6;
+  --blue-dim: rgba(59, 130, 246, 0.1);
   --mono: 'DM Mono', monospace;
   --sans: 'Sora', sans-serif;
 }
@@ -33,7 +34,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Subtle grain overlay */
 body::before {
   content: '';
   position: fixed;
@@ -44,7 +44,7 @@ body::before {
 }
 
 .container {
-  max-width: 820px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -89,17 +89,12 @@ h1 {
   margin-bottom: 24px;
 }
 
-h1 .arrow {
-  color: var(--accent);
-  display: inline-block;
-  margin: 0 8px;
-}
-
 .hero-desc {
   font-size: 17px;
   color: var(--text-muted);
-  max-width: 600px;
+  max-width: 620px;
   font-weight: 300;
+  line-height: 1.75;
 }
 
 .hero-links {
@@ -126,6 +121,29 @@ h1 .arrow {
   background: var(--accent-dim);
 }
 
+/* ── AI SIGNAL BANNER ── */
+.ai-banner {
+  margin-top: 32px;
+  padding: 14px 20px;
+  background: var(--blue-dim);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 8px;
+  max-width: 580px;
+}
+
+.ai-banner p {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--blue);
+  line-height: 1.6;
+}
+
+.ai-banner p span {
+  color: var(--text-muted);
+  font-family: var(--sans);
+  font-weight: 300;
+}
+
 /* ── SECTIONS ── */
 section {
   padding: 60px 0;
@@ -141,25 +159,39 @@ section {
   margin-bottom: 32px;
 }
 
-h2 {
-  font-size: 28px;
+/* ── NOTE CALLOUT ── */
+.note-callout {
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 28px;
+}
+
+.note-callout p {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.note-callout strong {
+  color: var(--accent);
   font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 16px;
 }
 
 /* ── PROJECT CARDS ── */
 .projects-grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .project-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 28px;
+  border-radius: 12px;
+  padding: 28px 32px;
   transition: all 0.25s;
   position: relative;
   overflow: hidden;
@@ -169,16 +201,14 @@ h2 {
   border-color: var(--accent);
   background: var(--surface-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
 }
 
 .project-card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
   background: var(--accent);
   opacity: 0;
   transition: opacity 0.25s;
@@ -190,7 +220,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   gap: 12px;
 }
 
@@ -198,6 +228,14 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.3px;
+}
+
+.project-sub {
+  font-size: 12px;
+  color: var(--accent);
+  font-family: var(--mono);
+  margin-bottom: 12px;
+  opacity: 0.8;
 }
 
 .project-status {
@@ -209,19 +247,7 @@ h2 {
   flex-shrink: 0;
 }
 
-.status-building {
-  color: var(--yellow);
-  background: rgba(234, 179, 8, 0.1);
-  border: 1px solid rgba(234, 179, 8, 0.25);
-}
-
-.status-upcoming {
-  color: var(--text-muted);
-  background: rgba(122, 122, 142, 0.1);
-  border: 1px solid rgba(122, 122, 142, 0.2);
-}
-
-.status-live {
+.status-built {
   color: var(--green);
   background: rgba(34, 197, 94, 0.1);
   border: 1px solid rgba(34, 197, 94, 0.25);
@@ -232,6 +258,28 @@ h2 {
   color: var(--text-muted);
   margin-bottom: 16px;
   font-weight: 300;
+  line-height: 1.8;
+}
+
+.highlight-list {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.highlight-list li {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 4px 0 4px 18px;
+  position: relative;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.highlight-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 .project-stack {
@@ -250,48 +298,40 @@ h2 {
   border: 1px solid var(--border);
 }
 
-.project-links {
-  margin-top: 16px;
-  display: flex;
-  gap: 12px;
-}
-
-.project-links a {
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--accent);
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.project-links a:hover { opacity: 0.7; }
-
 /* ── EXPERIENCE ── */
 .exp-item {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 24px 28px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
-.exp-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 6px;
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
 }
+
+.exp-title { font-size: 16px; font-weight: 600; }
+.exp-dates { font-family: var(--mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.exp-company { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 12px; }
 
 .exp-desc {
   font-size: 14px;
   color: var(--text-muted);
   font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 12px;
 }
 
 .exp-tech {
-  margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-top: 14px;
 }
 
 .exp-tech span {
@@ -343,6 +383,34 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* ── CERT ── */
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.cert-item:hover {
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
+
+.cert-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.cert-info { flex: 1; }
+.cert-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.cert-issuer { font-family: var(--mono); font-size: 12px; color: var(--text-muted); }
+.cert-arrow { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+
 /* ── FOOTER ── */
 footer {
   padding: 40px 0;
@@ -350,122 +418,159 @@ footer {
   text-align: center;
 }
 
-footer p {
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--text-muted);
-}
-
-footer a {
-  color: var(--accent);
-  text-decoration: none;
-}
+footer p { font-family: var(--mono); font-size: 12px; color: var(--text-muted); }
+footer a { color: var(--accent); text-decoration: none; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .hero { animation: fadeUp 0.6s ease-out; }
-.project-card:nth-child(1) { animation: fadeUp 0.6s ease-out 0.1s both; }
-.project-card:nth-child(2) { animation: fadeUp 0.6s ease-out 0.2s both; }
-.project-card:nth-child(3) { animation: fadeUp 0.6s ease-out 0.3s both; }
-.exp-item:nth-child(1) { animation: fadeUp 0.5s ease-out 0.1s both; }
-.exp-item:nth-child(2) { animation: fadeUp 0.5s ease-out 0.2s both; }
-.exp-item:nth-child(3) { animation: fadeUp 0.5s ease-out 0.3s both; }
+.project-card:nth-child(1) { animation: fadeUp 0.6s ease-out 0.10s both; }
+.project-card:nth-child(2) { animation: fadeUp 0.6s ease-out 0.20s both; }
+.project-card:nth-child(3) { animation: fadeUp 0.6s ease-out 0.30s both; }
+.exp-item:nth-child(1)     { animation: fadeUp 0.5s ease-out 0.10s both; }
+.exp-item:nth-child(2)     { animation: fadeUp 0.5s ease-out 0.20s both; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .hero { padding: 60px 0 40px; }
-  .project-header { flex-direction: column; }
+  .project-header, .exp-header { flex-direction: column; }
   .hero-links { flex-direction: column; }
   .hero-links a { text-align: center; }
 }
 </style>
 </head>
 <body>
-
 <div class="container">
 
   <!-- HERO -->
   <div class="hero">
-    <div class="tag">Open to opportunities</div>
+    <div class="tag">Open to opportunities · Open to relocation</div>
     <h1>Sairam Pashikanti</h1>
     <p class="hero-desc">
-      Software engineer with 4 years building enterprise tools — migration platforms, 
-      automation frameworks, API-driven desktop apps. Now building Gen AI applications: 
-      chatbots, RAG pipelines, and AI agents.
+      Software engineer with 4 years of experience designing and building enterprise-grade
+      ECM tooling, test automation platforms, and XML-driven RPA engines using Java,
+      Spring Boot, and JavaFX. Hands-on Documentum platform experience from real client
+      work in Oil &amp; Gas and Insurance domains.
     </p>
+
     <div class="hero-links">
       <a href="mailto:pashikantisairam@gmail.com">pashikantisairam@gmail.com</a>
-      <a href="https://github.com/sairam-pashikanti" target="_blank">GitHub ↗</a>
-      <!-- Uncomment when you have a LinkedIn URL -->
-      <!-- <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn ↗</a> -->
+      <a href="https://linkedin.com/in/sairam-pashikanti" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.hackerrank.com/certificates/12092a7ddc25" target="_blank">HackerRank ↗</a>
+    </div>
+
+    <!-- Subtle AI transition signal — no project details exposed -->
+    <div class="ai-banner">
+      <p>→ currently transitioning into <strong>Gen AI engineering</strong> &nbsp;·&nbsp;
+        <span>exploring Python, LLM APIs, and RAG-based application development</span>
+      </p>
     </div>
   </div>
 
-  <!-- PROJECTS -->
+  <!-- TOOLS BUILT @ TIERA -->
   <section>
-    <div class="section-label">Projects</div>
+    <div class="section-label">Tools Built — Tiera Technologies (Oct 2024 – Present)</div>
+
+    <div class="note-callout">
+      <p>
+        <strong>Context:</strong> The three projects below are software products and POCs
+        designed and built at Tiera Technologies — tools intended to enable ECM migrations,
+        test automation, and RPA workflows for enterprise clients. Hands-on real-world
+        client execution work was carried out at Verinon — see Engineering Background below.
+      </p>
+    </div>
+
     <div class="projects-grid">
 
+      <!-- ECM Tool -->
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">PDF Q&A Chatbot</span>
-          <span class="project-status status-upcoming">Week 4–6</span>
-          <!-- Change to status-building or status-live when you start/deploy -->
+          <span class="project-name">ECM Migration Tool Suite — DocOrbit</span>
+          <span class="project-status status-built">Built at Tiera</span>
         </div>
+        <div class="project-sub">Documentum Exporter · Alfresco Importer · FileNet · XECM</div>
         <p class="project-desc">
-          Upload any PDF document, ask questions in natural language, get accurate answers 
-          with source citations. Built on RAG architecture with vector search.
+          A pair of JavaFX desktop applications — an Exporter and an Importer — designed to
+          enable organisations to migrate content between enterprise ECM platforms.
+          The Exporter is built to pull documents, metadata, version history, and folder
+          structures out of Documentum; the Importer is built to push them into Alfresco,
+          FileNet, or XECM. The core Spring Batch pipeline is shared across all platforms —
+          only the REST API integration layer is swapped per target system.
         </p>
+        <ul class="highlight-list">
+          <li>Multi-threaded Spring Batch export pipeline — authenticates against Documentum REST API, recursively traverses cabinet/folder trees, packages documents with full metadata and version trees into a structured XSD-validated XML manifest</li>
+          <li>Configurable chunked file streaming via Spring's ResponseExtractor — designed to split large files (500 MB+) into SHA-256-verified .part files to prevent OutOfMemoryError under concurrent batch threads</li>
+          <li>Two-step import pipeline: Step 1 reads a JAXB-unmarshalled transformation XML mapping source types to target equivalents; Step 2 streams records via StaxEventItemReader, creates Alfresco folder hierarchies dynamically, uploads with version history and XFDF annotation support</li>
+          <li>Visual Transformation UI — users configure source-to-target type and attribute mappings via live dropdowns; the tool generates the transformation XML, no manual coding needed per project</li>
+          <li>Jakarta Mail integration — HTML progress reports every 10 records and a final completion email with per-document pass/fail details</li>
+          <li>Both tools built as thin desktop applications with minimal dependencies, designed for direct deployment in customer environments</li>
+        </ul>
         <div class="project-stack">
-          <span>Python</span>
-          <span>LangChain</span>
-          <span>ChromaDB</span>
-          <span>OpenAI API</span>
-          <span>Streamlit</span>
-        </div>
-        <!-- Uncomment when repo is ready
-        <div class="project-links">
-          <a href="#">GitHub →</a>
-          <a href="#">Live Demo →</a>
-        </div>
-        -->
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <span class="project-name">AI Automation Agent</span>
-          <span class="project-status status-upcoming">Week 7–9</span>
-        </div>
-        <p class="project-desc">
-          Give it a task in plain English — it breaks it into steps, calls the right tools, 
-          and delivers results. Multi-step AI agent with tool-calling capabilities.
-        </p>
-        <div class="project-stack">
-          <span>Python</span>
-          <span>CrewAI / LangGraph</span>
-          <span>FastAPI</span>
-          <span>Web Scraping</span>
+          <span>Java</span><span>Spring Boot</span><span>Spring Batch</span><span>JavaFX</span>
+          <span>Documentum REST API</span><span>Alfresco REST API</span><span>JAXB</span>
+          <span>Jackson XML</span><span>StaxEventItemReader</span><span>Jakarta Mail</span>
+          <span>XSD Validation</span><span>Multi-threading</span>
         </div>
       </div>
 
+      <!-- Test Automation -->
       <div class="project-card">
         <div class="project-header">
-          <span class="project-name">AI-Powered API Service</span>
-          <span class="project-status status-upcoming">Week 7–9</span>
+          <span class="project-name">Test Automation Executor — Auto Orbit</span>
+          <span class="project-status status-built">Built at Tiera</span>
         </div>
+        <div class="project-sub">Desktop Execution Agent · Web Recorder · Multi-browser · Server-driven</div>
         <p class="project-desc">
-          Production-grade REST API that wraps LLM capabilities — proper error handling, 
-          rate limiting, Swagger docs. Where my engineering background meets AI.
+          A JavaFX + Spring Boot desktop client designed to be a local test execution and
+          recording agent. It connects to a central Auto Orbit backend server to receive
+          browser test suites and run them locally via Selenium — test definitions live
+          entirely on the server. The same tool also records new test cases by watching
+          and capturing real user interactions in a live browser.
         </p>
+        <ul class="highlight-list">
+          <li>Server-driven execution model — fetches step-by-step test instructions (action, locator type, locator value, input) via JWT REST API and executes them recursively page-by-page until the server reports test completion</li>
+          <li>Supports Chrome, Firefox, and Edge via WebDriverManager; handles all Selenium locator strategies (id, name, xpath, css, className, linkText, partialLinkText) and actions including click, input, validate, select, hover, clear</li>
+          <li>Playwright-based recorder — the tool launches Chromium, injects a custom JavaScript recorder, streams captured interaction events back to Java via Playwright's exposeBinding bridge, and saves them as test cases to the server</li>
+          <li>Screen video recording (Monte Media) and screenshot capture on pass/fail; results reported back to the backend server for centralised reporting</li>
+          <li>Role-based UI — admin users access the recorder panel; regular users see only the execution panel</li>
+        </ul>
         <div class="project-stack">
-          <span>Python</span>
-          <span>FastAPI</span>
-          <span>Claude / OpenAI API</span>
-          <span>Docker</span>
+          <span>Java</span><span>Spring Boot</span><span>JavaFX</span>
+          <span>Selenium WebDriver</span><span>Playwright</span><span>WebDriverManager</span>
+          <span>Monte Media</span><span>JWT Auth</span><span>REST API</span><span>Gson</span>
+        </div>
+      </div>
+
+      <!-- RPA -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">XML-Driven RPA Tool — Auto Orbit RPA</span>
+          <span class="project-status status-built">Built at Tiera</span>
+        </div>
+        <div class="project-sub">Process Automation Engine · Web · AS400 Terminal · Database · File Generation</div>
+        <p class="project-desc">
+          A process automation engine designed to let teams define and run multi-system
+          automation workflows entirely through XML — no coding required per workflow.
+          A single XML process file can orchestrate web automation, IBM AS400 terminal
+          interaction, database queries, and document generation in one coordinated sequence.
+        </p>
+        <ul class="highlight-list">
+          <li>Web step executor (Selenium) — handles click, input, navigate, validate, screenshot steps across any supported locator strategy</li>
+          <li>IBM AS400/i terminal step executor via TN5250J — the tool launches a live TN5250 emulator, handles login, navigates menus, and fills fields programmatically via screen.sendKeys()</li>
+          <li>Database step executor — SQL read/write/insert operations with results piped into the variable context for use in downstream steps</li>
+          <li>File step executors — Excel and PowerPoint (Apache POI), CSV read with quoted-field parsing, PDF generation from HTML templates (OpenHTMLtoPDF + PDFBox), math expression evaluation (exp4j)</li>
+          <li>Full XML control flow: for/foreach loops over data tables, if/elseif/else conditionals on the variable context, per-step continueOnError flags</li>
+          <li>Windows focus manager using JNA Win32 API (EnumWindows, SetForegroundWindow) — switches OS focus between browser and AS400 terminal during multi-application workflow steps</li>
+        </ul>
+        <div class="project-stack">
+          <span>Java</span><span>Spring Boot</span><span>JavaFX</span><span>Selenium</span>
+          <span>TN5250J</span><span>Apache POI</span><span>OpenHTMLtoPDF</span>
+          <span>Apache PDFBox</span><span>exp4j</span><span>JNA Win32</span>
+          <span>Jackson XML</span><span>JAXB</span>
         </div>
       </div>
 
@@ -474,82 +579,123 @@ footer a {
 
   <!-- ENGINEERING BACKGROUND -->
   <section>
-    <div class="section-label">Engineering Background</div>
+    <div class="section-label">Engineering Background — Verinon Technology Solutions (Mar 2022 – Oct 2024)</div>
 
     <div class="exp-item">
-      <div class="exp-title">ECM Migration Platform</div>
+      <div class="exp-header">
+        <div class="exp-title">Documentum ECM Projects — Oil &amp; Gas (APAC) &amp; Insurance (India)</div>
+        <div class="exp-dates">Mar 2022 – Oct 2024</div>
+      </div>
+      <div class="exp-company">Verinon Technology Solutions · Software Engineer</div>
       <p class="exp-desc">
-        Built API-driven tools that export and import documents + metadata across enterprise 
-        content platforms (Documentum, Alfresco, FileNet, XECM). Separate exporter and importer 
-        modules with a JavaFX desktop interface and Spring Boot backend.
+        Hands-on Documentum platform work for real enterprise clients — repository creation,
+        repository merger execution, Webtop and DFC customisation, and ongoing production
+        support for clients in Oil &amp; Gas and Insurance sectors.
       </p>
+      <ul class="highlight-list">
+        <li>Led Documentum repository creation and executed a repository merger for a major APAC Oil &amp; Gas client — consolidated two legacy repositories into one, preserving all custom object types, workflows, lifecycles, and registered tables with zero data loss</li>
+        <li>Developed DFC, BOF, and WDK components and customised Webtop UI to extend repository functionality per client business requirements</li>
+        <li>Provided production support and maintenance for an Indian Insurance client — managing tickets, Documentum jobs, and environment troubleshooting across Tomcat and JBoss servers (Documentum 16.4 and 22.x)</li>
+        <li>Worked with Oracle and SQL Server for content metadata queries and data management supporting migration and production support activities</li>
+      </ul>
       <div class="exp-tech">
-        <span>Java</span><span>Spring Boot</span><span>JavaFX</span><span>REST APIs</span><span>Documentum API</span>
+        <span>Java</span><span>J2EE</span><span>DFC</span><span>BOF</span><span>WDK</span>
+        <span>Documentum 16.4 / 22.x</span><span>Webtop</span><span>Oracle</span>
+        <span>SQL Server</span><span>Tomcat</span><span>JBoss</span><span>Git</span>
       </div>
     </div>
 
-    <div class="exp-item">
-      <div class="exp-title">Test Automation Executor</div>
-      <p class="exp-desc">
-        Desktop client that receives test suites from a central server, executes browser 
-        automation via Playwright, and reports results. Includes a recording feature that 
-        captures user actions and converts them to test scripts.
-      </p>
-      <div class="exp-tech">
-        <span>Java</span><span>Spring Boot</span><span>JavaFX</span><span>Playwright</span><span>Selenium</span>
-      </div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-title">XML-Driven RPA Accelerator</div>
-      <p class="exp-desc">
-        RPA tool that reads XML-defined workflows and automates desktop and web processes. 
-        JavaFX frontend for workflow configuration, Java execution engine on the backend.
-      </p>
-      <div class="exp-tech">
-        <span>Java</span><span>Spring Boot</span><span>JavaFX</span><span>XML</span><span>RPA</span>
-      </div>
-    </div>
   </section>
 
   <!-- SKILLS -->
   <section>
     <div class="section-label">Skills</div>
 
-    <div class="skills-label">Building with now</div>
+    <div class="skills-label">Core stack</div>
     <div class="skills-row">
-      <span class="skill-tag primary">Python</span>
-      <span class="skill-tag primary">FastAPI</span>
-      <span class="skill-tag primary">LangChain</span>
-      <span class="skill-tag primary">LLM APIs</span>
-      <span class="skill-tag primary">RAG</span>
+      <span class="skill-tag primary">Java</span>
+      <span class="skill-tag primary">Spring Boot</span>
+      <span class="skill-tag primary">Spring Batch</span>
+      <span class="skill-tag primary">JavaFX</span>
+      <span class="skill-tag primary">REST APIs</span>
+      <span class="skill-tag primary">XML / JAXB</span>
       <span class="skill-tag primary">SQL</span>
       <span class="skill-tag primary">Git</span>
     </div>
 
-    <div class="skills-label">Production experience</div>
+    <div class="skills-label">ECM &amp; content platforms</div>
     <div class="skills-row">
-      <span class="skill-tag">Java</span>
-      <span class="skill-tag">Spring Boot</span>
-      <span class="skill-tag">JavaFX</span>
-      <span class="skill-tag">REST APIs</span>
+      <span class="skill-tag">Documentum REST API</span>
+      <span class="skill-tag">Alfresco REST API</span>
+      <span class="skill-tag">DFC / BOF / WDK</span>
+      <span class="skill-tag">FileNet</span>
+      <span class="skill-tag">XECM</span>
+    </div>
+
+    <div class="skills-label">Automation &amp; RPA</div>
+    <div class="skills-row">
+      <span class="skill-tag">Selenium WebDriver</span>
       <span class="skill-tag">Playwright</span>
-      <span class="skill-tag">Selenium</span>
+      <span class="skill-tag">WebDriverManager</span>
+      <span class="skill-tag">TN5250J (AS400)</span>
+      <span class="skill-tag">JNA Win32 API</span>
+      <span class="skill-tag">Monte Media</span>
+    </div>
+
+    <div class="skills-label">File &amp; document generation</div>
+    <div class="skills-row">
+      <span class="skill-tag">Apache POI</span>
+      <span class="skill-tag">OpenHTMLtoPDF</span>
+      <span class="skill-tag">Apache PDFBox</span>
+      <span class="skill-tag">exp4j</span>
+      <span class="skill-tag">Jackson XML</span>
+    </div>
+
+    <div class="skills-label">Databases &amp; infrastructure</div>
+    <div class="skills-row">
       <span class="skill-tag">Oracle</span>
       <span class="skill-tag">SQL Server</span>
+      <span class="skill-tag">Maven</span>
+      <span class="skill-tag">Tomcat</span>
+      <span class="skill-tag">JBoss</span>
+      <span class="skill-tag">Lombok</span>
+      <span class="skill-tag">SLF4J</span>
     </div>
+
+    <div class="skills-label">Exploring</div>
+    <div class="skills-row">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">LLM APIs</span>
+      <span class="skill-tag">Gen AI</span>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <div class="section-label">Certifications</div>
+
+    <a class="cert-item" href="https://www.hackerrank.com/certificates/12092a7ddc25" target="_blank">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-info">
+        <div class="cert-name">Problem Solving (Basic)</div>
+        <div class="cert-issuer">HackerRank · Verified Certificate</div>
+      </div>
+      <div class="cert-arrow">↗</div>
+    </a>
+
   </section>
 
   <!-- FOOTER -->
   <footer>
     <p>
-      <a href="mailto:pashikantisairam@gmail.com">pashikantisairam@gmail.com</a> · 
-      <a href="https://github.com/sairam-pashikanti" target="_blank">GitHub</a>
+      <a href="mailto:pashikantisairam@gmail.com">pashikantisairam@gmail.com</a> ·
+      <a href="https://linkedin.com/in/sairam-pashikanti" target="_blank">LinkedIn</a> ·
+      <a href="https://www.hackerrank.com/certificates/12092a7ddc25" target="_blank">HackerRank</a>
     </p>
     <p style="margin-top: 8px;">© 2026 Sairam Pashikanti</p>
   </footer>
 
 </div>
-
 </body>
 </html>
